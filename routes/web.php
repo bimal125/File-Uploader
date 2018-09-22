@@ -14,3 +14,7 @@
 Route::get('/','FileController@create');
 Route::post('file','FileController@store');
 Route::get('/download/{url}','FileController@download');
+
+Route::get('/upload','UploadController@index');
+
+Route::any('/fine-upload','UploadController@upload');
