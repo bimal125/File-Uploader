@@ -12,6 +12,11 @@ class RepositoryServiceProvider extends ServiceProvider
             'AppRepo\Repository\FileRepositoryInterface',
             'AppRepo\Repository\Eloquent\FileEloquentRepository'
         );
+
+        $this->app->bind(
+            'AppRepo\Repository\UploadRepositoryInterface',
+            'AppRepo\Repository\Eloquent\UploadEloquentRepository'
+        );
     }
     
 }

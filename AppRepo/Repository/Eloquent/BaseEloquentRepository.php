@@ -2,6 +2,7 @@
 namespace AppRepo\Repository\Eloquent;
 use Illuminate\Database\Eloquent\Model;
 use AppRepo\Repository\BaseRepositoryInterface;
+use App\UploadHandler;
 
 class BaseEloquentRepository implements BaseRepositoryInterface
 {
